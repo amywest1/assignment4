@@ -1,0 +1,122 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: burlywood;
+    color: maroon;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+h1 {
+    font-family: 'Trocchi', serif;
+    text-align: center;
+    font-size: 56px;
+}
+
+.header ul {
+  list-style: none;
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+}
+
+.header li {
+    display: inline;
+    font-size: 36px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: saddlebrown;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  background: white;
+  z-index: 1;
+}
+
+.hero {
+    display: block;
+    max-width: inherit;
+    margin: 0 auto;
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    text-align: center;
+    font-family: 'Trocchi', serif;
+    font-size: 65px;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 1px black;
+}
+
+.contents {
+    max-width: 60%;
+    margin: 0 auto;
+    font-family: 'Jost', sans-serif;
+}
+
+.cookie {
+    padding: 15px 40px 15px 0;
+    float: left;
+}
+
+.contents h2 {
+    font-family: 'Trocchi', serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 15px;
+    color: maroon;
+}
+.contents ul {
+  padding: 0 0 10px;
+}
+
+footer {
+    background: burlywood;
+    margin: 25px 0;
+}
+
+
+
+.logo {
+    max-width: 200px;
+    animation:cookiewalk 6s linear alternate-reverse infinite;
+}
+
+@keyframes cookiewalk {
+  0% {
+    transform: translateX(-200px) scaleX(1);
+  }
+  25% {
+    transform: translateX(350px) scaleX(0);
+  }
+  50% {
+    transform: translateX(900px) scaleX(-1);
+  }
+  75%{
+    transform: translateX(1450px) scaleX(0);
+  }
+  100%{
+    transform: translateX(2000px) scaleX(1);
+  }
+}
